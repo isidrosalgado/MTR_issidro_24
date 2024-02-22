@@ -23,6 +23,11 @@ view: order_items {
     sql: ${TABLE}.inventory_item_id ;;
   }
 
+  measure: cpm {
+    type: number
+    sql: ${inventory_item_id} / ${inventory_item_id} * 1000.46 ;;
+    value_format_name: usd
+  }
   dimension: order_id {
     type: number
     # hidden: yes
