@@ -21,6 +21,31 @@ persist_with: mtr_isidro_24_default_datagroup
 
 # To see the Explore you’re building, navigate to the Explore menu and select an Explore under "Mtr Isidro 24"
 
+explore:  debug_test_1 {
+
+  join: debug_test_2a {
+    from:  debug_test_2
+    view_label:  "Many to One"
+    sql_on: ${debug_test_1.id} = ${debug_test_2a.id} ;;
+    relationship: many_to_one
+  }
+
+  join: debug_test_2b {
+    from:  debug_test_2
+    view_label:  "One to Many"
+    sql_on: ${debug_test_1.id} = ${debug_test_2b.id} ;;
+    relationship: one_to_many
+  }
+
+  join: debug_test_2c {
+    from:  debug_test_2
+    view_label:  "Many to Many"
+    sql_on: ${debug_test_1.id} = ${debug_test_2c.id} ;;
+    relationship: many_to_many
+  }
+
+
+}
 explore: billion_orders {
   join: orders {
     type: left_outer
