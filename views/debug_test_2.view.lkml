@@ -1,8 +1,8 @@
 view: debug_test_2 {
 
   derived_table: {
-    sql: SELECT '14dd' as id, 12345678901234 as v UNION ALL
-      SELECT '13dd' as id, 12345678901234 as v ;;
+    sql: SELECT '14d' as id, 12345678901234 as v UNION ALL
+      SELECT '13d' as id, 12345678901234 as v ;;
   }
 
   dimension: id {
