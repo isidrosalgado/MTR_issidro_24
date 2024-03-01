@@ -1,5 +1,6 @@
-include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 connection: "thelook"
+
+include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 
 explore:  debug_test_1 {
 
