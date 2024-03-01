@@ -1,8 +1,8 @@
 view: debug_test_1 {
 
   derived_table: {
-    sql: SELECT '14dd' as id UNION ALL
-      SELECT '13dd' as id  ;;
+    sql: SELECT '14d' as id UNION ALL
+      SELECT '13d' as id  ;;
   }
 
   dimension: id {
